@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="container">
+	
+</div>
+<input id="btn" type="button" value="+">
+
+
+<script>
+	var divAdd = $('#btn');
+	divAdd.click(function(e) {
+		var divs = $("<div></div>").text("Element");
+		divs.appendTo("#container").addClass("element");		
+	});
+</script>
+</body>
+</html>
